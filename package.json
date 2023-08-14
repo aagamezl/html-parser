@@ -1,0 +1,30 @@
+{
+  "name": "template-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build:types": "tsc -p tsconfig.build.types.json",
+    "coverage:view": "c8 --reporter=html --reporter=text ava",
+    "coverage": "c8 --reporter=lcov ava",
+    "lint": "standard --verbose | snazzy",
+    "lint:fix": "standard --fix",
+    "lint:types": "tsc",
+    "prepare": "husky install",
+    "test": "ava",
+    "test:watch": "ava --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^5.3.1",
+    "c8": "^8.0.1",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.3",
+    "snazzy": "^9.0.0",
+    "standard": "^17.1.0"
+  }
+}
